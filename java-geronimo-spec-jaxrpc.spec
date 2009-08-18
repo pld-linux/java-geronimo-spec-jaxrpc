@@ -1,11 +1,4 @@
 #
-# Conditional build:
-%if "%{pld_release}" == "ti"
-%bcond_without	java_sun	# build with gcj
-%else
-%bcond_with	java_sun	# build with java-sun
-%endif
-#
 %define		srcname		geronimo-spec-jaxrpc
 %include	/usr/lib/rpm/macros.java
 Summary:	Geronimo spec jaxrpc
@@ -19,9 +12,8 @@ Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	630138565166448cd8190d2a82356dce
 URL:		http://svn.clazzes.org/svn/odtransform/
 BuildRequires:	jar
-%{!?with_java_sun:BuildRequires:	java-gcj-compat-devel}
 BuildRequires:	servletapi
-%{?with_java_sun:BuildRequires:	java-sun >= 1.5}
+BuildRequires:	java-sun
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	servletapi
