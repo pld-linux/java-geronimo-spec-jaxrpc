@@ -11,7 +11,7 @@
 Summary:	Geronimo spec jaxrpc
 Name:		java-geronimo-spec-jaxrpc
 Version:	1.1
-Release:	0.1
+Release:	1
 License:	Apache v2.0
 Group:		Libraries/Java
 # svn export http://svn.apache.org/repos/asf/geronimo/specs/branches/1_1/geronimo-spec-jaxrpc java-greonimo-spec-jaxrpc-1.1
