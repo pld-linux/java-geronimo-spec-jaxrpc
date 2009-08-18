@@ -39,8 +39,8 @@ Geronimo spec jaxrpc.
 required_jars="servlet-api"
 CLASSPATH=$(build-classpath $required_jars)
 find -name '*.java' | xargs %javac -cp $CLASSPATH
-cd src
-find -name '*.class' | xargs %jar cf ../%{srcname}-%{version}.jar
+cd src/main/java
+find -name '*.class' | xargs %jar cf ../../../%{srcname}-%{version}.jar
 
 %install
 rm -rf $RPM_BUILD_ROOT
