@@ -4,7 +4,7 @@
 Summary:	Geronimo spec jaxrpc
 Name:		java-geronimo-spec-jaxrpc
 Version:	1.1
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Libraries/Java
 # svn export http://svn.apache.org/repos/asf/geronimo/specs/branches/1_1/geronimo-spec-jaxrpc java-greonimo-spec-jaxrpc-1.1
@@ -12,11 +12,11 @@ Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	630138565166448cd8190d2a82356dce
 URL:		http://svn.clazzes.org/svn/odtransform/
 BuildRequires:	jar
-BuildRequires:	servletapi
+BuildRequires:	java(Servlet)
 BuildRequires:	java-sun
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	servletapi
+Requires:	java(Servlet)
 Requires:	jpackage-utils
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
