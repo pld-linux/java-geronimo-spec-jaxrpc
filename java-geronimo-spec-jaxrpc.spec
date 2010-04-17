@@ -13,7 +13,7 @@ Source0:	%{name}-%{version}.tar.bz2
 URL:		http://svn.clazzes.org/svn/odtransform/
 BuildRequires:	jar
 BuildRequires:	java(Servlet)
-BuildRequires:	java-sun
+BuildRequires:	jdk
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	java(Servlet)
