@@ -11,12 +11,11 @@ Group:		Libraries/Java
 Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	630138565166448cd8190d2a82356dce
 URL:		http://svn.clazzes.org/svn/odtransform/
-BuildRequires:	jar
-BuildRequires:	java(Servlet)
+BuildRequires:	java(servlet)
 BuildRequires:	jdk
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	java(Servlet)
+Requires:	java(servlet)
 Requires:	jpackage-utils
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
