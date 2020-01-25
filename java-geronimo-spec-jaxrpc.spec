@@ -1,6 +1,5 @@
 #
 %define		srcname		geronimo-spec-jaxrpc
-%include	/usr/lib/rpm/macros.java
 Summary:	Geronimo spec jaxrpc
 Name:		java-geronimo-spec-jaxrpc
 Version:	1.1
